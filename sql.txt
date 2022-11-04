@@ -1,0 +1,13 @@
+-- name of employee in USA department
+
+select employee.first_name, employee.last_name
+from employee Inner Join  department ON employee.dept_id = department.dept_id
+Inner Join locations ON department.location_id = locations.location_id
+where employee.managerID is not Null and locations.steer_Address = 'UsA'
+
+selewct employee.first_name, employee.last_name, employee.salary > (select avg(salary) from employee) from employee Inner join department ON employee_dept_id = department.dept_id
+where department.department_name  = 'IT'
+
+select salesman.name, customer.cust_name
+from salesman inner join customer on salesman.salesman_id = customer.saleman_id
+where salesman.city = 'London' and customer.city = 'London'
